@@ -19,6 +19,47 @@ const example = {
 
 // Write your intern objects here:
 
+const Mitski = {
+  id : 1,
+  name : "Mitski",
+  email : "mmelloy0@psu.edu",
+  gender : "Female",
+
+}
+
+
+const Kennan  = {
+  id : 2 ,
+  name : "Kennan",
+  email :"kdiben1@tinypic.com",
+  gender :"Male" ,
+  greeting: function(){
+    return "Hello, my name is " + (name);
+  },
+}
+const Keven = {
+  id : 3,
+  name : Keven ,
+  email :"kmummery2@wikimedia.org",
+  gender :"Male" ,
+}
+const Gannie= {
+  id : 4 ,
+  name : "Gannie" ,
+  email :"gmartinson3@illinois.edu" ,
+  gender :"Male",
+}
+const Antonietta = {
+  id : 5 ,
+  name :"Antoinetta",
+  email : "adaine5@samsung.com",
+  gender : "Female" ,
+  skill = function (a, b){
+    return a + b;
+  }
+  
+}
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
