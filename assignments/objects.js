@@ -39,7 +39,7 @@ const Kennan  = {
 }
 const Keven = {
   id : 3,
-  name : Keven ,
+  name : "Keven" ,
   email :"kmummery2@wikimedia.org",
   gender :"Male" ,
 }
@@ -48,13 +48,14 @@ const Gannie= {
   name : "Gannie" ,
   email :"gmartinson3@illinois.edu" ,
   gender :"Male",
-}
+}  
+
 const Antonietta = {
   id : 5 ,
   name :"Antoinetta",
   email : "adaine5@samsung.com",
   gender : "Female" ,
-  skill = function (a, b){
+  skill : function (a, b){
     return a + b;
   }
   
@@ -76,11 +77,11 @@ console.log(Keven.email);
 // Gannie's name
 console.log(Gannie.name);
 // Antonietta's Gender
-console.log(Antoinetta.gender)
+console.log(Antonietta.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-console.log(kennan.greeting());
+console.log(Kennan.greeting());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));

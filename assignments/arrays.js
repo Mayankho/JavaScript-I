@@ -65,25 +65,29 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 console.log(inventory[32])
-
+//This is how you access a position in an array and its 32 because arrays start at zero
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 49;
-console.log(inventory[lastcar]);
+console.log(inventory[lastCar]);
 // Or 
 lastCar = 0
 lastCar = inventory[inventory.length-1]
-
+// inventory.length equates to [50] because it starts counting arrays at one
+//so then you always subtract one to get to the last this method is synonymous with getting to the last point in an array
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-for (let i = 0; i< inventory.length; i++){
-    carModels.push(inventory[i].car_make);
+for (let i = 0; i< inventory.length; i++){ // this is creating an iteration for the whole inventory length
+    carModels.push(inventory[i].car_make);//carModels(inventory[i].car_make) yield? nothing it doesnt exist in it
+    //.push is creating the content in the array
 } 
-carModels.sort();
+carModels.sort();//this then automatically sorts the array for you 
 console.log(carModels);
+
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -107,7 +111,7 @@ console.log(oldCars);
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
 for (let i = 0; i < inventory.length; i++){
-    if (invontory[i].car_make=== 'BMW' || invontory[i].car_make === 'Audi'){
+    if (inventory[i].car_make=== 'BMW' || inventory[i].car_make === 'Audi'){
         BMWAndAudi.push(inventory[i].car_model);
     }
 }
